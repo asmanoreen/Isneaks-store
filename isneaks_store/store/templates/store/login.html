@@ -1,0 +1,40 @@
+<style>
+    /* Centering the form */
+    .login-container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-form {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
+</style>
+
+{% block content %}
+<div class="container login-container">
+    <div class="login-form">
+        <h2 class="text-center mb-4">Login</h2>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_username">Username</label>
+                {{ form.username }}
+            </div>
+            <div class="form-group">
+                <label for="id_password">Password</label>
+                {{ form.password }}
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
