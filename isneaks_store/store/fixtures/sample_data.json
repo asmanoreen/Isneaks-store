@@ -1,0 +1,334 @@
+[
+    {
+        "model": "store.category",
+        "pk": 1,
+        "fields": {
+            "name": "Sneakers",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.category",
+        "pk": 2,
+        "fields": {
+            "name": "Running Shoes",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.branding",
+        "pk": 1,
+        "fields": {
+            "name": "Nike",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.branding",
+        "pk": 2,
+        "fields": {
+            "name": "Adidas",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 1,
+        "fields": {
+            "name": "Air Max 90",
+            "description": "The Air Max 90 is a classic sneaker known for its comfort and style.",
+            "price": "120.00",
+            "branding": 1,
+            "category": 1,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 2,
+        "fields": {
+            "name": "UltraBoost 21",
+            "description": "The UltraBoost 21 is a top running shoe with superior cushioning.",
+            "price": "180.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 10,
+        "fields": {
+            "name": "Air Jordan 1",
+            "description": "Air Jordan 1 combines style and heritage in one iconic shoe.",
+            "price": "150.00",
+            "branding": 1,
+            "category": 1,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 11,
+        "fields": {
+            "name": "Stan Smith",
+            "description": "Adidas Stan Smith is a timeless classic tennis shoe.",
+            "price": "80.00",
+            "branding": 2,
+            "category": 1,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 12,
+        "fields": {
+            "name": "Yeezy Boost 350",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 13,
+        "fields": {
+            "name": "Air Jordan 1 Mid SE 'Grey Pine Green",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 14,
+        "fields": {
+            "name": "Air Jordan 4 Retro 'Military Blue' 2024",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 15,
+        "fields": {
+            "name": "Air Jordan 4 Retro SE Paris Olympics",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 16,
+        "fields": {
+            "name": "Air Jordan 4 Retro White Thunder",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.product",
+        "pk": 17,
+        "fields": {
+            "name": "Air Jordan 4 Retro 'Red Thunder'",
+            "description": "Yeezy Boost 350 offers ultimate comfort with a unique style.",
+            "price": "220.00",
+            "branding": 2,
+            "category": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.size",
+        "pk": 1,
+        "fields": {
+            "name": "9",
+            "product": 1,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.size",
+        "pk": 2,
+        "fields": {
+            "name": "10",
+            "product": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.size",
+        "pk": 3,
+        "fields": {
+            "name": "8",
+            "product": 10,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.size",
+        "pk": 4,
+        "fields": {
+            "name": "11",
+            "product": 11,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.size",
+        "pk": 5,
+        "fields": {
+            "name": "10",
+            "product": 12,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.color",
+        "pk": 1,
+        "fields": {
+            "name": "Red",
+            "product": 1,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.color",
+        "pk": 2,
+        "fields": {
+            "name": "Blue",
+            "product": 2,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.color",
+        "pk": 3,
+        "fields": {
+            "name": "Black",
+            "product": 10,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.color",
+        "pk": 4,
+        "fields": {
+            "name": "White",
+            "product": 11,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.color",
+        "pk": 5,
+        "fields": {
+            "name": "Grey",
+            "product": 12,
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 1,
+        "fields": {
+            "product": 1,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/air-jordan-1-mid-grey-green-DC7294-103_1.png?v=1637571690&width=832",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 2,
+        "fields": {
+            "product": 2,
+            "image": "https://www.kickgame.co.uk/cdn/shop/files/HF3713-002.png?v=1721127431&width=1024",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 3,
+        "fields": {
+            "product": 10,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/yeezy-boost-700-bright-blue-gz0541_1.png?v=1659026245&width=832",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 4,
+        "fields": {
+            "product": 11,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/adidas-yeezy-boost-350-v2-onyx-HQ4540_1.png?v=1658230465&width=1024",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 5,
+        "fields": {
+            "product": 12,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/adidas-yeezy-boost-350-v2-carbon-beluga-hq7045.png?v=1699011789&width=832",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 6,
+        "fields": {
+            "product": 13,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/Yeezy-Boost-700-V2-FU7914-Tephra_1.png?v=1668083654&width=1200",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 7,
+        "fields": {
+            "product": 14,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/yeezy-boost-350-v2-mono-mist-gw2871_1.png?v=1658250262&width=1200",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 8,
+        "fields": {
+            "product": 15,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/adidas-yeezy-boost-700-faded-azure-GZ2002_1.png?v=1638286109&width=1200",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 9,
+        "fields": {
+            "product": 16,
+            "image": "https://www.kickgame.co.uk/cdn/shop/products/yeezy-boost-700-bright-blue-gz0541_1.png?v=1659026245&width=832",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    },
+    {
+        "model": "store.productimage",
+        "pk": 10,
+        "fields": {
+            "product": 17,
+            "image": "https://www.kickgame.co.uk/cdn/shop/files/FQ7928-001_300x300_crop_center.png?v=1720604208",
+            "updated_at": "2024-01-01T00:00:00Z"
+        }
+    }
+]

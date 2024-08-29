@@ -10,4 +10,6 @@ urlpatterns = [
     path('login/', CustomLoginView.as_view(), name='login'),
     path('logout/', CustomLogoutView.as_view(), name='logout'),
     # path('cart/', views.cart, name='cart'),
+
+    path('product/<int:pk>/', views.product_detail, name='product_detail'),
 ]

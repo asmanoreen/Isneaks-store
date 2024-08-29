@@ -167,7 +167,7 @@ ol {
 	object-fit: contain;
 }
 
-.custom-btn {
+.custom-shop-btn {
 	width: 150px;
 	font-weight: 400;
 	background-color: #000000;
@@ -181,7 +181,7 @@ ol {
 }
 
 /* Hover Effect */
-.custom-btn:hover {
+.custom-shop-btn:hover {
 	opacity: 0.8;
 	color: #000000;
 	border-color: #000000;
@@ -190,6 +190,22 @@ ol {
 
 .custom-line-height {
 	line-height: 1.5;
+}
+
+.custom-btn {
+	font-weight: 400;
+	background-color: #000000;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	padding: 10px 20px;
+	font-size: 11px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Hover Effect */
+.custom-btn:hover {
+	color: #ffffff;
 }
 
 /*---------------------
@@ -209,6 +225,7 @@ ol {
 	height: 200px;
 	object-fit: cover;
 }
+
 .card-text {
 	font-size: 12px;
 }
@@ -230,4 +247,15 @@ ol {
 	color: #111111;
 	font-weight: 700;
 	margin-bottom: 8px;
+}
+
+.view-all {
+	display: flex;
+	justify-content: end;
+	text-decoration: underline;
+}
+
+.view-all:hover {
+	color: #0056b3;
+	text-decoration: underline;
 }
