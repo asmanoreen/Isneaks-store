@@ -1,0 +1,71 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+
+<div class="container-fluid" style="background-color: #E4E0D7;">
+    <div class="container py-4">
+        <div class="card border-0 shopping-card">
+            <div class="row">
+                <div class="col-md-8 cart">
+                    <div class="card-header bg-transparent d-flex justify-content-between border-0 pl-0 pt-0 pb-4">
+                        <h6 class="font-weight-bold text-uppercase">Shopping Cart</h6>
+                        <h6 class="font-weight-bold text-uppercase">{{ cart_items | length }} items</h6>
+                    </div>
+                    {% for item in cart_items %}
+                    <div class="row border-2 border-top border-dark">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src="{{ item.product.productimage_set.first.image }}"></div>
+                            <div class="col-4">
+                                <div>{{ item.product.name }}</div>
+                            </div>
+                            <div class="col">
+                                <input type="number" style="width: 50px;" class="form-control form-control-sm text-center" value="{{ item.quantity }}">
+                            </div>
+                            <div class="col">£{{ item.product.price }}</div>
+                            <div class="col">
+                                <form method="post" action="{% url 'remove_from_cart' item.id %}" class="d-inline">
+                                    {% csrf_token %}
+                                    <button type="submit" class="btn btn-sm">
+                                        <i class="fa fa-trash fa-lg" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    {% empty %}
+                    <div colspan="5" class="text-center">Your cart is empty.</div>
+                    {% endfor %}
+                </div>
+                <div class="col-md-4 summary">
+                    <div class="card-header bg-transparent d-flex justify-content-between border-0 pl-0 pt-0 pb-2">
+                        <h6 class="font-weight-bold text-uppercase">summary</h6>
+                    </div>
+                    <hr class="border-2 border-top border-dark" />
+                    <div class="d-flex justify-content-between">
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">items {{cart_items | length}}</h6>
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">£{{ cart.total }}</h6>
+                    </div>
+                    
+                    <div class="shipping-detail mt-4">
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">SHIPPING</h6>
+                        <select class="form-select w-100 my-3 mb-4"><option class="text-muted">Standard-Delivery £5.00</option></select>
+                    </div>
+                    <div class="discount">
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">GIVE CODE</h6>
+                        <input class="form-control w-100 my-4" id="code" placeholder="Enter your code">
+                    </div>
+                    <hr class="border-2 border-top border-dark mt-4"/>
+                    <div class="d-flex justify-content-between mt-4">
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">Total Price</h6>
+                        <h6 class="font-size-12 font-weight-bold text-uppercase">£{{ cart.total }}</h6>
+                    </div>
+                    <div>
+                        <a class="btn custom-btn text-uppercase w-100 mt-4" aria-pressed="true" role="button" href="#">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -22,10 +22,13 @@
           <div class="card product-card">
               <img src="{{ product.image_url }}" class="card-img-top" alt="Product">
               <div class="card-body">
-                  <p class="card-text custom-line-height">{{ product.name }}</p>
+                  <p class="card-text custom-line-height font-weight-bold">{{ product.name }}</p>
                   <div style="display: flex; justify-content: space-between;">
                     <p class="card-text"><b class="mr-1">Price</b> £{{ product.price }}</p>
-                    <p class="add-to-basket"><a href="">Add to Basket</a></p>
+                    <form method="post" action="{% url 'add_to_cart' product.id %}">
+                      {% csrf_token %}
+                      <button type="submit" class="btn add-to-basket btn-sm">Add to Basket</button>
+                    </form>
                   </div>
               </div>
           </div>

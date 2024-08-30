@@ -149,12 +149,11 @@ ol {
 }
 
 
-.add-to-basket > a {
+.add-to-basket {
 	color: #000000;
-	font-size: 12px;
 	font-weight: 500;
-	text-decoration: underline;
-	
+	font-size: 12px !important;
+	text-decoration: underline !important;
 }
 
 .carousel-font-size {
@@ -237,6 +236,9 @@ ol {
 /*---------------------
   Helper CSS
 -----------------------*/
+.text-align-left {
+	text-align: left;
+} 
 
 .breadcrumb-option {
 	background: #E4E0D7;
@@ -257,4 +259,44 @@ ol {
 
 .view-all:hover {
 	color: #0056b3;
+	text-decoration: underline;
+}
+
+.font-size-12 {
+	font-size: 12px;
+}
+
+/*---------------------
+  	Shopping Card
+-----------------------*/
+
+
+.shopping-card {
+	margin: auto;
+    max-width: 950px;
+    width: 90%;
+    box-shadow: 20px 6px 20px 6px rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    border: transparent;
+	font-size: 12px;
+}
+
+.cart{
+    background-color: #fff;
+    padding: 4vh 5vh;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.summary{
+    background-color: #E4E0D7;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 4vh;
+    color: rgb(65, 65, 65);
+}
+
+.shopping-cart-btn {
+	font-size: 10px;
+    line-height: 1;
 }
